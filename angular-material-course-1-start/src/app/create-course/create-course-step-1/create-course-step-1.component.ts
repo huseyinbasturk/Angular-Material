@@ -8,6 +8,12 @@ import { MatCalendarCellClassFunction } from "@angular/material/datepicker";
   styleUrls: ["create-course-step-1.component.scss"],
 })
 export class CreateCourseStep1Component {
+
+  DateSelected: any;
+fetchDateSelected(){
+  console.log("date selected by user is --- " + this.DateSelected);
+}
+
   form = this.fb.group({
     title: [
       "",

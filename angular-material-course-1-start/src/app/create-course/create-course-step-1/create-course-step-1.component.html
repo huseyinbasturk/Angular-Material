@@ -69,3 +69,10 @@
     </textarea>
   </mat-form-field>
 </div>
+
+Date Picker: <input type="date" [(ngModel)]="DateSelected" />
+<button (click)="fetchDateSelected()">Fetch Date</button>
+
+<br />
+
+User selected date is: {{ DateSelected }}
